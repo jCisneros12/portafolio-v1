@@ -1,0 +1,83 @@
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+}
+
+.skills__card {
+    width: 25%;
+    position: relative;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+.skills__name-txt {
+    font-size: var(--font-size-normal);
+    font-family: var(--font-family-sans);
+    font-weight: 600;
+    color: var(--color-text-black);
+    margin-bottom: .8rem;
+}
+
+.skills_name-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.skills__icon {
+    width: 25px;
+}
+
+.skills__description-txt {
+    color: var(--color-text-black-grey);
+    font-size: var(--font-size-medium-small);
+    text-align: justify;
+}
+
+.skills__card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 4px;
+    height: 100%;
+    background-color: #4cbef5;
+    border-radius: 10px 0 0 10px;
+}
+
+.card-java::after {
+    background-color: #78C257;
+}
+
+.card-php::after {
+    background-color: #8993be;
+}
+
+.card-html::after {
+    background-color: #f0db4f;
+}
+
+.card-mysql::after {
+    background-color: #F29111;
+}
+
+.card-git::after {
+    background-color: #f34f29;
+}
+
+/* ------------- MEDIA QUERYES ---------------- */
+
+@media (max-width: 600px) {
+    .skills {
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+    .skills__card {
+        width: 95%;
+    }
+}

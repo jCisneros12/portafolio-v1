@@ -1,0 +1,117 @@
+@import url("root.css");
+.resumen {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+}
+
+.resumen__info {
+    position: relative;
+    /* width: 90%; */
+    margin: 5.5rem 8rem;
+}
+
+.resumen__info::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25px;
+    width: 8px;
+    height: 100%;
+    background-color: var(--color-primary);
+    border-radius: 10px 0 0 10px;
+}
+
+.resumen__info-title {
+    font-size: var(--font-size-big);
+    font-weight: 600;
+    color: var(--color-text-black);
+}
+
+.resumen__info-subtitle {
+    font-size: var(--font-size-big-medium);
+    font-weight: 400;
+    color: var(--color-text-grey);
+    margin-bottom: 1rem;
+}
+
+.resumen__info-description {
+    font-family: var(--font-family-sans);
+    font-size: var(--font-size-medium);
+    color: var(--color-text-black-grey);
+    text-align: justify;
+    /* letter-spacing: .15px; */
+}
+
+.resumen__button {
+    padding: .8rem;
+    margin: 1rem 0;
+    border-radius: 15px;
+    background-color: var(--color-primary-hover);
+    color: var(--color-white);
+    font-size: var(--font-size-normal);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.resumen__button-icon {
+    width: 15px;
+}
+
+.resumen__button:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: 0 0 30px var(--color-primary-shadow);
+}
+
+.resumen__image-container {
+    width: 50%;
+    margin: 0 4rem;
+}
+
+.resumen__image {
+    border-radius: 30px;
+    width: 230px;
+}
+
+/* ------------- MEDIA QUERYES ---------------- */
+
+@media (max-width: 600px) {
+    .resumen {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-background);
+        flex-direction: column-reverse;
+    }
+    .resumen__info {
+        margin: 1.2rem 2.2rem;
+    }
+    .resumen__image-container {
+        width: 20%;
+        margin: 1rem 4rem;
+        display: flex;
+        justify-content: center;
+    }
+    .resumen__image {
+        border-radius: 65px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 769px) {
+    .resumen__info {
+        width: 80%;
+        margin: 3.2rem 0.5rem 3.2rem 3.2rem;
+    }
+    .resumen__image-container {
+        width: 30%;
+    }
+    .resumen__image {
+        border-radius: 200px;
+        width: 200px;
+    }
+}

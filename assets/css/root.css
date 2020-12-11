@@ -1,0 +1,67 @@
+/* Andika New Basic */
+
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Lato */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+/* definicion de colores, tipografias, etc de la pag... */
+
+:root {
+    /* Fuentes */
+    --font-family-sans: 'Source Sans Pro', sans-serif;
+    --font-family-lato: 'Lato', sans-serif;
+    /* Tamaños */
+    --font-size-big: 3rem;
+    --font-size-big-medium: 1.6rem;
+    --font-size-medium: 1.1rem;
+    --font-size-normal: 16px;
+    --font-size-medium-small: 15px;
+    --font-size-small: 12px;
+    /* colores */
+    --color-text-black: #2d2d2d;
+    --color-text-black-grey: #414141;
+    --color-text-grey: #373737;
+    --color-primary: #86002A;
+    --color-primary-hover: #b30039;
+    --color-primary-shadow: #b3003948;
+    --color-background: #F0F8FF;
+    --color-white: #ffffff;
+    /* color badgets */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body {
+    /* font-family: 'Andika New Basic', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+.section-name {
+    margin: 2rem 0;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+.section-name__text {
+    font-size: var(--font-size-big-medium);
+    font-weight: 700;
+    color: var(--color-text-grey);
+    margin-left: .5rem;
+}
+
+.section-name__img {
+    width: 30px;
+}
